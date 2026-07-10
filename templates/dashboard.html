@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bottleneck Capital — Agentic Hedge Fund</title>
+    <style>
+        :root {
+            --bg: #0d1117;
+            --bg-card: #161b22;
+            --bg-elevated: #1c2128;
+            --border: #30363d;
+            --text: #c9d1d9;
+            --text-dim: #8b949e;
+            --green: #3fb950;
+            --red: #f85149;
+            --yellow: #d29922;
+            --blue: #58a6ff;
+            --cyan: #39d0d8;
+            --purple: #bc8cff;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', monospace;
+            background: var(--bg);
+            color: var(--text);
+            min-height: 100vh;
+        }
+        .header {
+            background: var(--bg-card);
+            border-bottom: 1px solid var(--border);
+            padding: 16px 24px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        .header h1 {
+            font-size: 18px;
+            color: var(--cyan);
+            letter-spacing: 1px;
+        }
+        .header .status {
+            font-size: 12px;
+            color: var(--text-dim);
+        }
+        .header .status span { color: var(--green); }
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 16px;
+            margin-bottom: 20px;
+        }
+        .card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 20px;
+        }
+        .card h2 {
+            font-size: 13px;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            color: var(--text-dim);
+            margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .metric-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 8px 0;
+            border-bottom: 1px solid var(--border);
+        }
+        .metric-row:last-child { border-bottom: none; }
+        .metric-label { color: var(--text-dim); font-size: 13px; }
+        .metric-value { font-weight: 600; font-size: 14px; }
+        .metric-value.green { color: var(--green); }
+        .metric-value.red { color: var(--red); }
+        .metric-value.yellow { color: var(--yellow); }
+        .metric-value.cyan { color: var(--cyan); }
+        .metric-value.blue { color: var(--blue); }
+        .metric-value.purple { color: var(--purple); }
+
+        .regime-badge {
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+        .regime-risk-on { background: rgba(63,185,80,0.15); color: var(--green); }
+        .regime-mixed { background: rgba(210,153,34,0.15); color: var(--yellow); }
+        .regime-caution { background: rgba(248,81,73,0.15); color: var(--red); }
+        .regime-risk-off { background: rgba(248,81,73,0.3); color: var(--red); }
+
+        .tier-badge {
+            display: inline-block;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 11px;
+            font-weight: 700;
+        }
+        .tier-1 { background: rgba(63,185,80,0.15); color: var(--green); }
+        .tier-2 { background: rgba(88,166,255,0.15); color: var(--blue); }
+        .tier-3 { background: rgba(210,153,34,0.15); color: var(--yellow); }
+        .tier-watch { background: rgba(139,148,158,0.15); color: var(--text-dim); }
+
+        .signal-row {
+            display: grid;
+            grid-template-columns: 80px 1fr 80px 60px 80px;
+            gap: 8px;
+            padding: 8px 0;
+            border-bottom: 1px solid var(--border);
+            font-size: 13px;
+            align-items: center;
+        }
+        .signal-row:last-child { border-bottom: none; }
+        .signal-ticker { font-weight: 700; color: var(--cyan); }
+        .signal-score { text-align: right; font-weight: 600; }
+        .signal-type { text-align: center; }
+
+        .btn {
+            background: var(--bg-elevated);
+            border: 1px solid var(--border);
+            color: var(--text);
+            padding: 8px 16px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 13px;
+            transition: all 0.2s;
+        }
+        .btn:hover { background: var(--border); }
+        .btn-primary { background: rgba(57,208,216,0.15); border-color: var(--cyan); color: var(--cyan); }
+        .btn-danger { background: rgba(248,81,73,0.15); border-color: var(--red); color: var(--red); }
+        .btn-group { display: flex; gap: 8px; margin-bottom: 16px; flex-wrap: wrap; }
+
+        .sleeve-bar {
+            display: flex;
+            height: 24px;
+            border-radius: 6px;
+            overflow: hidden;
+            margin-top: 8px;
+        }
+        .sleeve-segment { display: flex; align-items: center; justify-content: center; font-size: 10px; font-weight: 700; color: #fff; }
+
+        .kill-switch {
+            padding: 8px 12px;
+            border-radius: 6px;
+            font-size: 12px;
+            margin-bottom: 4px;
+        }
+        .kill-active { background: rgba(248,81,73,0.15); color: var(--red); border: 1px solid rgba(248,81,73,0.3); }
+        .kill-inactive { background: rgba(63,185,80,0.08); color: var(--green); border: 1px solid rgba(63,185,80,0.2); }
+
+        .expert-card {
+            padding: 10px;
+            background: var(--bg);
+            border-radius: 8px;
+            margin-bottom: 8px;
+        }
+        .expert-name { font-weight: 700; font-size: 13px; color: var(--purple); }
+        .expert-focus { font-size: 11px; color: var(--text-dim); margin-top: 2px; }
+        .expert-thesis { font-size: 12px; color: var(--text); margin-top: 4px; font-style: italic; }
+
+        .footer {
+            text-align: center;
+            padding: 20px;
+            color: var(--text-dim);
+            font-size: 11px;
+            border-top: 1px solid var(--border);
+            margin-top: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .grid { grid-template-columns: 1fr; }
+            .signal-row { grid-template-columns: 60px 1fr 60px 50px 60px; font-size: 11px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>BOTTLENECK CAPITAL v2.0</h1>
+        <div class="status">Regime: <span id="regime-badge" class="regime-badge regime-mixed">MIXED</span> | TECE: <span id="tece-score">6/12</span> | <span id="last-update">--</span></div>
+    </div>
+
+    <div class="container">
+        <!-- Action Buttons -->
+        <div class="btn-group">
+            <button class="btn btn-primary" onclick="runCycle()">Run Cycle</button>
+            <button class="btn" onclick="refreshData()">Refresh Data</button>
+            <button class="btn" onclick="loadDashboard()">Load Dashboard</button>
+            <button class="btn btn-danger" onclick="liquidate()">EMERGENCY LIQUIDATE</button>
+        </div>
+
+        <!-- Portfolio Overview -->
+        <div class="grid">
+            <div class="card">
+                <h2>Portfolio</h2>
+                <div class="metric-row">
+                    <span class="metric-label">Total Value</span>
+                    <span class="metric-value cyan" id="total-value">$--</span>
+                </div>
+                <div class="metric-row">
+                    <span class="metric-label">Cash</span>
+                    <span class="metric-value" id="cash">$--</span>
+                </div>
+                <div class="metric-row">
+                    <span class="metric-label">Positions</span>
+                    <span class="metric-value" id="num-positions">--</span>
+                </div>
+                <div class="metric-row">
+                    <span class="metric-label">Total Return</span>
+                    <span class="metric-value green" id="total-return">--%</span>
+                </div>
+                <div class="metric-row">
+                    <span class="metric-label">Trades</span>
+                    <span class="metric-value" id="trade-count">--</span>
+                </div>
+            </div>
+
+            <div class="card">
+                <h2>Sleeve Allocation</h2>
+                <div id="sleeve-bars"></div>
+                <div id="sleeve-details"></div>
+            </div>
+
+            <div class="card">
+                <h2>Risk Status</h2>
+                <div class="metric-row">
+                    <span class="metric-label">Status</span>
+                    <span class="metric-value green" id="risk-status">GO</span>
+                </div>
+                <div class="metric-row">
+                    <span class="metric-label">Drawdown</span>
+                    <span class="metric-value green" id="drawdown">0.0%</span>
+                </div>
+                <div class="metric-row">
+                    <span class="metric-label">Kill Switches</span>
+                    <span class="metric-value green" id="kill-count">0 ACTIVE</span>
+                </div>
+                <div id="kill-switches"></div>
+            </div>
+
+            <div class="card">
+                <h2>Targets</h2>
+                <div class="metric-row">
+                    <span class="metric-label">Phase 1 ($2M)</span>
+                    <span class="metric-value" id="phase1-pct">--%</span>
+                </div>
+                <div class="metric-row">
+                    <span class="metric-label">Phase 2 ($10M)</span>
+                    <span class="metric-value" id="phase2-pct">--%</span>
+                </div>
+                <div class="metric-row">
+                    <span class="metric-label">Monthly Add</span>
+                    <span class="metric-value">$2,000</span>
+                </div>
+                <div class="metric-row">
+                    <span class="metric-label">Mode</span>
+                    <span class="metric-value yellow" id="trading-mode">SIMULATED</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Top Signals -->
+        <div class="card" style="margin-bottom: 16px;">
+            <h2>Top IMAW Signals</h2>
+            <div id="signals-list">
+                <div class="signal-row" style="color: var(--text-dim); text-align: center; padding: 20px;">
+                    Click "Run Cycle" to generate signals
+                </div>
+            </div>
+        </div>
+
+        <!-- Expert Brains -->
+        <div class="card" style="margin-bottom: 16px;">
+            <h2>Expert Knowledge Brains</h2>
+            <div class="grid" style="margin-top: 12px;" id="experts-grid"></div>
+        </div>
+
+        <!-- Kill Switches Detail -->
+        <div class="grid">
+            <div class="card">
+                <h2>7 Live Signals</h2>
+                <div id="live-signals"></div>
+            </div>
+            <div class="card">
+                <h2>Position Limits</h2>
+                <div class="metric-row">
+                    <span class="metric-label">Max Single Name</span>
+                    <span class="metric-value">15%</span>
+                </div>
+                <div class="metric-row">
+                    <span class="metric-label">Max Bottleneck</span>
+                    <span class="metric-value">60%</span>
+                </div>
+                <div class="metric-row">
+                    <span class="metric-label">Risk/Trade</span>
+                    <span class="metric-value">1% ($500)</span>
+                </div>
+                <div class="metric-row">
+                    <span class="metric-label">Max Options Loss</span>
+                    <span class="metric-value">$500</span>
+                </div>
+                <div class="metric-row">
+                    <span class="metric-label">Hedge Budget</span>
+                    <span class="metric-value">2%/yr</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        Bottleneck Capital v2.0 — Agentic Hedge Fund | 4-Sleeve Portfolio + IMAW v2.0 + 7-Department Multi-Agent Architecture
+    </div>
+
+    <script>
+        const API_BASE = '';
+
+        async function runCycle() {
+            const btn = document.querySelector('.btn-primary');
+            btn.textContent = 'Running...';
+            btn.disabled = true;
+            try {
+                const res = await fetch(`${API_BASE}/api/cycle`, {method: 'POST'});
+                const data = await res.json();
+                console.log('Cycle result:', data);
+                await loadDashboard();
+            } catch(e) {
+                console.error(e);
+                alert('Error: ' + e.message);
+            }
+            btn.textContent = 'Run Cycle';
+            btn.disabled = false;
+        }
+
+        async function refreshData() {
+            await fetch(`${API_BASE}/api/refresh`, {method: 'POST'});
+            await loadDashboard();
+        }
+
+        async function liquidate() {
+            if(!confirm('EMERGENCY: Close ALL positions?')) return;
+            await fetch(`${API_BASE}/api/liquidate`, {method: 'POST'});
+            await loadDashboard();
+        }
+
+        async function loadDashboard() {
+            try {
+                const res = await fetch(`${API_BASE}/api/dashboard`);
+                const data = await res.json();
+                renderDashboard(data);
+            } catch(e) {
+                console.error('Dashboard load error:', e);
+            }
+        }
+
+        function renderDashboard(data) {
+            // Regime
+            const regime = data.regime?.current || 'MIXED';
+            const badge = document.getElementById('regime-badge');
+            badge.textContent = regime;
+            badge.className = 'regime-badge regime-' + regime.toLowerCase().replace('_', '-');
+
+            // Portfolio
+            const port = data.portfolio || {};
+            document.getElementById('total-value').textContent = '$' + (port.total_value || 0).toLocaleString('en-US', {minimumFractionDigits: 2});
+            document.getElementById('cash').textContent = '$' + (port.cash || 0).toLocaleString('en-US', {minimumFractionDigits: 2});
+            document.getElementById('num-positions').textContent = port.num_positions || 0;
+            const retEl = document.getElementById('total-return');
+            retEl.textContent = (port.total_return_pct || 0).toFixed(2) + '%';
+            retEl.className = 'metric-value ' + ((port.total_return_pct || 0) >= 0 ? 'green' : 'red');
+            document.getElementById('trade-count').textContent = port.trade_count || 0;
+
+            // Sleeve allocation
+            const sleevePcts = port.sleeve_allocation || {};
+            const sleeveColors = {innovation: '#3fb950', macro: '#58a6ff', income: '#d29922', options: '#bc8cff', defensive: '#f85149'};
+            let sleeveHTML = '<div class="sleeve-bar">';
+            for(const [sleeve, pct] of Object.entries(sleevePcts)) {
+                sleeveHTML += `<div class="sleeve-segment" style="width:${pct}%;background:${sleeveColors[sleeve] || '#666'}">${pct.toFixed(0)}%</div>`;
+            }
+            sleeveHTML += '</div>';
+            document.getElementById('sleeve-bars').innerHTML = sleeveHTML;
+
+            // Risk
+            const risk = data.risk || {};
+            const rStatus = document.getElementById('risk-status');
+            rStatus.textContent = risk.kill_switches?.active ? 'NO-GO' : 'GO';
+            rStatus.className = 'metric-value ' + (risk.kill_switches?.active ? 'red' : 'green');
+            document.getElementById('drawdown').textContent = (risk.drawdown?.current_dd_pct || 0).toFixed(1) + '%';
+            const killCount = (risk.kill_switches?.triggered || []).length;
+            document.getElementById('kill-count').textContent = killCount + ' ACTIVE';
+            document.getElementById('kill-count').className = 'metric-value ' + (killCount > 0 ? 'red' : 'green');
+
+            // Kill switch details
+            let killHTML = '';
+            const kills = risk.kill_switches?.triggered || [];
+            if(kills.length > 0) {
+                kills.forEach(k => {
+                    killHTML += `<div class="kill-switch kill-active">${k}</div>`;
+                });
+            } else {
+                killHTML += `<div class="kill-switch kill-inactive">All clear — no kill switches active</div>`;
+            }
+            document.getElementById('kill-switches').innerHTML = killHTML;
+
+            // Targets
+            const targets = data.targets || {};
+            document.getElementById('phase1-pct').textContent = targets.current_value ? ((targets.current_value / targets.phase1_target) * 100).toFixed(1) + '%' : '--%';
+            document.getElementById('phase2-pct').textContent = targets.current_value ? ((targets.current_value / targets.phase2_target) * 100).toFixed(2) + '%' : '--%';
+            document.getElementById('trading-mode').textContent = port.mode || 'SIMULATED';
+
+            // Signals
+            const signals = data.top_signals || [];
+            let sigHTML = `
+                <div class="signal-row" style="font-weight:700;color:var(--text-dim);border-bottom:2px solid var(--border)">
+                    <span>Ticker</span><span>Signal</span><span>Score</span><span>Type</span><span>Tier</span>
+                </div>`;
+            signals.forEach(s => {
+                const tierClass = s.tier === 'TIER_1' ? 'tier-1' : s.tier === 'TIER_2' ? 'tier-2' : s.tier === 'TIER_3' ? 'tier-3' : 'tier-watch';
+                sigHTML += `
+                <div class="signal-row">
+                    <span class="signal-ticker">${s.ticker}</span>
+                    <span>${s.type}</span>
+                    <span class="signal-score">${s.score?.toFixed(1) || '--'}</span>
+                    <span class="signal-type" style="color:${s.type === 'CONFIRMED' ? 'var(--green)' : 'var(--yellow)'}">${s.type}</span>
+                    <span><span class="tier-badge ${tierClass}">${s.tier}</span></span>
+                </div>`;
+            });
+            document.getElementById('signals-list').innerHTML = sigHTML;
+
+            // Experts
+            const experts = data.expert_brains || [];
+            let expHTML = '';
+            experts.forEach(e => {
+                expHTML += `
+                <div class="expert-card">
+                    <div class="expert-name">${e.name}</div>
+                    <div class="expert-focus">${e.focus}</div>
+                    <div class="expert-thesis">"${e.thesis_summary}"</div>
+                </div>`;
+            });
+            document.getElementById('experts-grid').innerHTML = expHTML;
+
+            // Live signals
+            const liveSigs = data.live_signals || [];
+            let liveHTML = '';
+            liveSigs.forEach((s, i) => {
+                liveHTML += `
+                <div class="metric-row">
+                    <span class="metric-label">S${i+1}: ${s.name}</span>
+                    <span class="metric-value" style="font-size:11px;color:var(--text-dim)">${s.trigger}</span>
+                </div>`;
+            });
+            document.getElementById('live-signals').innerHTML = liveHTML;
+
+            // Last update
+            document.getElementById('last-update').textContent = new Date().toLocaleTimeString();
+        }
+
+        // Auto-refresh every 60s
+        setInterval(loadDashboard, 60000);
+        loadDashboard();
+    </script>
+</body>
+</html>
