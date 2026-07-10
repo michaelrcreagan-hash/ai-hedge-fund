@@ -1,0 +1,122 @@
+{
+  "metadata": {
+    "description": "ETF Holdings for Multi-ETF Options Flow Dashboard",
+    "version": "6.0",
+    "date": "2026-07-11",
+    "source": "S&P Global, Yahoo Finance, Fund Fact Sheets"
+  },
+  "etfs": {
+    "SOXX": {
+      "name": "iShares Semiconductor ETF",
+      "sector": "Semiconductors",
+      "holdings": ["AMD","MU","NVDA","AVGO","INTC","AMAT","KLAC","MRVL","TSM","LRCX","TXN","ADI","NXPI","MPWR","QCOM","ALAB","TER","ASML","MCHP","CRDO","ON","ASX","MTSI","ENTG","UMC"]
+    },
+    "SMH": {
+      "name": "VanEck Semiconductor ETF",
+      "sector": "Semiconductors",
+      "holdings": ["NVDA","TSM","AVGO","AMD","MU","AMAT","ASML","TXN","INTC","KLAC","LRCX","ADI","QCOM","MRVL","CDNS","SNPS","NXPI","MPWR","STM","TER"]
+    },
+    "IWM": {
+      "name": "iShares Russell 2000 ETF",
+      "sector": "Small Cap",
+      "holdings": ["MOG.A","HUT","BTSG","CYTK","VSAT","MXL","AGX","UMBF","FROG","RIOT","KRYS","ESE","CTRE","FCFS","ONB","SNEX","ALKS","COMP","ENS","QBTS"]
+    },
+    "SPY": {
+      "name": "SPDR S&P 500 ETF",
+      "sector": "Broad Market",
+      "holdings": ["AAPL","MSFT","AMZN","NVDA","GOOGL","META","TSLA","BRK.B","AVGO","JPM","LLY","V","UNH","XOM","MA","PG","JNJ","HD","MRK","CVX"]
+    },
+    "QQQ": {
+      "name": "Invesco QQQ Trust",
+      "sector": "Tech Mega",
+      "holdings": ["AAPL","MSFT","AMZN","NVDA","GOOGL","META","TSLA","AVGO","PEP","COST","NFLX","AZN","AMD","LIN","TMUS","ADBE","CSCO","AMAT","PDD","MU"]
+    },
+    "AIPO": {
+      "name": "Renaissance IPO ETF",
+      "sector": "AI Power",
+      "holdings": ["VST","CEG","NRG","TLN","OKLO","SMR","NNE","ORA","BE","PLUG","FSLR","ENPH","NEE","D","EXC","AEP","SO","ED","XEL","CNP"]
+    },
+    "XBI": {
+      "name": "SPDR S&P Biotech ETF",
+      "sector": "Biotech",
+      "holdings": ["VRTX","REGN","GILD","AMGN","BIIB","MRNA","SGEN","BMRN","ALNY","INCY","CRSP","NTLA","BEAM","EDIT","BLUE","SRPT","IONS","FGEN","RPTX","ARWR"]
+    },
+    "ARKF": {
+      "name": "ARK Fintech Innovation ETF",
+      "sector": "Fintech",
+      "holdings": ["COIN","SQ","SHOP","STNE","DKNG","HOOD","SOFI","AFRM","LC","TREE","BL","RBLX","TWLO","ZI","PAGS","MELI","SE","OPEN","RDFN","Z"]
+    },
+    "ARKQ": {
+      "name": "ARK Autonomous Tech ETF",
+      "sector": "Autonomous",
+      "holdings": ["TSLA","TER","AMD","KTOS","SPCX","TRMB","DE","CAT","ISRG","GOOGL","NVDA","ANSS","BLDE","ACHR","JOBY","LILM","ESLT","TDY","HON","BA"]
+    },
+    "ICLN": {
+      "name": "iShares Global Clean Energy ETF",
+      "sector": "Clean Energy",
+      "holdings": ["BE","FSLR","NXT","ENPH","PLUG","SEDG","VWS","EQTL3","SUZLON","CHUBU","EDP","ORSTED","CWEN","ENLT","TE","SHLS","DOOSAN","ENGI11","NDX1","GPRE"]
+    },
+    "DRAM": {
+      "name": "VANECK DRAM ETF",
+      "sector": "Memory Chips",
+      "holdings": ["MU","WDC","STX","SNDK","LRCX","AMAT","KLAC","ENTG","NVDA","TSM","MCHP","ON","QCOM","MRVL","AMD","TXN","ADI","MPWR","TER","ASML"]
+    },
+    "UTES": {
+      "name": "Virtus Reaves Utilities ETF",
+      "sector": "Utilities",
+      "holdings": ["TLN","VST","CEG","XEL","CNP","ETR","AEP","LNT","IDA","SRE"]
+    },
+    "URA": {
+      "name": "Global X Uranium ETF",
+      "sector": "Uranium",
+      "holdings": ["CCJ","OKLO","NXE","UEC","KAP","LEU","EFR","PDN","DNN","UUUU"]
+    },
+    "BOTZ": {
+      "name": "Global X Robotics & AI ETF",
+      "sector": "Robotics/AI",
+      "holdings": ["ABBN","KEYENCE","NVDA","FANUC","ISRG","SMC","INOVANCE","DAIFUKU","YASKAWA","COGNEX","AUR","TSLA","BIDU","AVAV","JBTM","OMRON","HORIZON","XIAOMI","UIPATH","PEGASYSTEMS"]
+    },
+    "TCAI": {
+      "name": "T. Rowe Price AI & Tech ETF",
+      "sector": "AI Infra",
+      "holdings": ["VRT","MU","DELL","SNDK","CIEN","STX","WDC","PWR","MYRG","GEV","NVT","MTZ","DY","WULF","CIFR","CEG","CORZ","NRG","MOD","BE"]
+    },
+    "AIVC": {
+      "name": "Tidal Ai, AI Value ETF",
+      "sector": "AI Value",
+      "holdings": ["NVDA","AMD","AVGO","TSM","MU","AMAT","LRCX","KLAC","ASML","QCOM","MRVL","INTC","ADI","TXN","CDNS","SNPS","TER","MCHP","MPWR","NXPI"]
+    },
+    "WGMI": {
+      "name": "Valkyrie Bitcoin Miners ETF",
+      "sector": "BTC Mining",
+      "holdings": ["MSTR","RIOT","MARA","CLSK","CORZ","HUT","WULF","BTBT","BITF","IREN","CIFR","ARBK","SDIG","DMG","SATO","GLXY","COIN","BTDR","CAN","HIVE"]
+    }
+  },
+  "conviction_ranking": [
+    {"ticker": "NVDA", "conviction_score": 8, "etfs": ["SOXX", "SMH", "SPY", "QQQ", "ARKQ", "DRAM", "BOTZ", "AIVC"], "sectors": ["Semiconductors", "Broad Market", "Tech Mega", "Autonomous", "Memory Chips", "Robotics/AI", "AI Value"]},
+    {"ticker": "AMD", "conviction_score": 6, "etfs": ["SOXX", "SMH", "QQQ", "ARKQ", "DRAM", "AIVC"], "sectors": ["Semiconductors", "Tech Mega", "Autonomous", "Memory Chips", "AI Value"]},
+    {"ticker": "MU", "conviction_score": 6, "etfs": ["SOXX", "SMH", "QQQ", "DRAM", "TCAI", "AIVC"], "sectors": ["Semiconductors", "Tech Mega", "Memory Chips", "AI Infra", "AI Value"]},
+    {"ticker": "AVGO", "conviction_score": 5, "etfs": ["SOXX", "SMH", "SPY", "QQQ", "AIVC"], "sectors": ["Semiconductors", "Broad Market", "Tech Mega", "AI Value"]},
+    {"ticker": "AMAT", "conviction_score": 5, "etfs": ["SOXX", "SMH", "QQQ", "DRAM", "AIVC"], "sectors": ["Semiconductors", "Tech Mega", "Memory Chips", "AI Value"]},
+    {"ticker": "TER", "conviction_score": 5, "etfs": ["SOXX", "SMH", "ARKQ", "DRAM", "AIVC"], "sectors": ["Semiconductors", "Autonomous", "Memory Chips", "AI Value"]},
+    {"ticker": "KLAC", "conviction_score": 4, "etfs": ["SOXX", "SMH", "DRAM", "AIVC"], "sectors": ["Semiconductors", "Memory Chips", "AI Value"]},
+    {"ticker": "MRVL", "conviction_score": 4, "etfs": ["SOXX", "SMH", "DRAM", "AIVC"], "sectors": ["Semiconductors", "Memory Chips", "AI Value"]},
+    {"ticker": "TSM", "conviction_score": 4, "etfs": ["SOXX", "SMH", "DRAM", "AIVC"], "sectors": ["Semiconductors", "Memory Chips", "AI Value"]},
+    {"ticker": "LRCX", "conviction_score": 4, "etfs": ["SOXX", "SMH", "DRAM", "AIVC"], "sectors": ["Semiconductors", "Memory Chips", "AI Value"]},
+    {"ticker": "TXN", "conviction_score": 4, "etfs": ["SOXX", "SMH", "DRAM", "AIVC"], "sectors": ["Semiconductors", "Memory Chips", "AI Value"]},
+    {"ticker": "ADI", "conviction_score": 4, "etfs": ["SOXX", "SMH", "DRAM", "AIVC"], "sectors": ["Semiconductors", "Memory Chips", "AI Value"]},
+    {"ticker": "MPWR", "conviction_score": 4, "etfs": ["SOXX", "SMH", "DRAM", "AIVC"], "sectors": ["Semiconductors", "Memory Chips", "AI Value"]},
+    {"ticker": "QCOM", "conviction_score": 4, "etfs": ["SOXX", "SMH", "DRAM", "AIVC"], "sectors": ["Semiconductors", "Memory Chips", "AI Value"]},
+    {"ticker": "ASML", "conviction_score": 4, "etfs": ["SOXX", "SMH", "DRAM", "AIVC"], "sectors": ["Semiconductors", "Memory Chips", "AI Value"]},
+    {"ticker": "TSLA", "conviction_score": 4, "etfs": ["SPY", "QQQ", "ARKQ", "BOTZ"], "sectors": ["Broad Market", "Tech Mega", "Autonomous", "Robotics/AI"]},
+    {"ticker": "INTC", "conviction_score": 3, "etfs": ["SOXX", "SMH", "AIVC"], "sectors": ["Semiconductors", "AI Value"]},
+    {"ticker": "NXPI", "conviction_score": 3, "etfs": ["SOXX", "SMH", "AIVC"], "sectors": ["Semiconductors", "AI Value"]},
+    {"ticker": "MCHP", "conviction_score": 3, "etfs": ["SOXX", "DRAM", "AIVC"], "sectors": ["Semiconductors", "Memory Chips", "AI Value"]},
+    {"ticker": "GOOGL", "conviction_score": 3, "etfs": ["SPY", "QQQ", "ARKQ"], "sectors": ["Broad Market", "Tech Mega", "Autonomous"]},
+    {"ticker": "CEG", "conviction_score": 3, "etfs": ["AIPO", "TCAI", "DRAM"], "sectors": ["AI Power", "AI Infra", "Memory Chips"]},
+    {"ticker": "BE", "conviction_score": 3, "etfs": ["AIPO", "ICLN", "TCAI"], "sectors": ["AI Power", "Clean Energy", "AI Infra"]},
+    {"ticker": "AAPL", "conviction_score": 3, "etfs": ["SPY", "QQQ", "DRAM"], "sectors": ["Broad Market", "Tech Mega", "Memory Chips"]},
+    {"ticker": "MSFT", "conviction_score": 3, "etfs": ["SPY", "QQQ", "DRAM"], "sectors": ["Broad Market", "Tech Mega", "Memory Chips"]},
+    {"ticker": "AMZN", "conviction_score": 3, "etfs": ["SPY", "QQQ", "DRAM"], "sectors": ["Broad Market", "Tech Mega", "Memory Chips"]}
+  ]
+}
