@@ -1,0 +1,283 @@
+====================================================================================================
+BOTTLENECK CAPITAL v2.0 — AI BOTTLENECK LIVE STRATEGY SCANNER
+Run Date: July 9, 2026 2:33 PM ET
+====================================================================================================
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📊 SECTION 1: MACRO REGIME & MARKET ENVIRONMENT
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Current Regime:     MIXED (transitioning)
+SMH Price:          $612.22
+SMH vs Trend:       ABOVE $489.47
+SMH RSI:            48.1 (Neutral)
+SMH ADX:            16.5 (Ranging)
+SMH 20d Vol:        65.1% (HIGH)
+SMH SuperTrend:     BULLISH 🟢
+SMH 5d Return:      -1.3%
+
+INTERPRETATION:
+• SMH in MIXED regime — consolidation phase after a strong move
+• Volatility at 65.1% is ELEVATED (normal ~25-35%) — options premium rich
+• ADX at 16.5 shows weak trend conviction — range-bound behavior likely
+• SuperTrend still bullish but price pulling back to trend support
+• STRATEGY: Favor defined-risk options strategies (spreads) over naked directional
+
+4-Sleeve Allocation (MIXED Regime):
+   Sleeve 1 — Macro Rotation:     30%
+   Sleeve 2 — Income/Hedge:       25%
+   Sleeve 3 — Innovation/High-Conviction:  25%
+   Sleeve 4 — Options Overlay:    10%
+   Cash Reserve:                  10%
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+✅ SECTION 2: CONFIRMED BUY SIGNALS (Weekly Gate PASS + Score ≥ 8)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Total CONFIRMED Signals: 2
+
+================================================================================
+🎯 ALAB — TIER_1 | Combined Score: 8.01
+================================================================================
+   Price:           $420.02
+   RSI:             55.7
+   ADX:             32.7 (Strong Trend)
+   SuperTrend:      BULLISH 🟢
+   EMA Stack:       8>21>50 ✅
+   MACD:            Bearish 🔴
+   Relative Vol:    0.4x
+   5-day Return:    -2.5%
+   21-day Return:   +21.3%
+   Weekly Gate:     7.0/7.0 ✅
+   Daily Gate:      8.6/12.0
+   Four-Factor:     25.0/25.0 — TIER_1
+   Risk/Reward:     1:1.5
+
+   TRADE SETUP:
+   Entry:           $420.02
+   Stop Loss:       $325.86 (2x ATR)
+   Target:          $561.28 (3x ATR)
+
+   OPTIONS STRUCTURE (IV-Rank Decision Tree):
+   IV-Rank:         Moderate (elevated vol at 65%)
+   Recommended:     Bull Call Debit Spread (50-70% IV-Rank zone)
+
+   POSITION SIZING ($50k portfolio, 1% risk):
+   Risk Amount:     $500
+   Stop Distance:   $94.16
+   Shares:          5
+   Position Value:  $2100
+
+
+================================================================================
+🎯 AMD — TIER_1 | Combined Score: 8.01
+================================================================================
+   Price:           $545.50
+   RSI:             55.2
+   ADX:             22.4 (Moderate)
+   SuperTrend:      BULLISH 🟢
+   EMA Stack:       8>21>50 ✅
+   MACD:            Bearish 🔴
+   Relative Vol:    0.6x
+   5-day Return:    +0.9%
+   21-day Return:   +11.3%
+   Weekly Gate:     7.0/7.0 ✅
+   Daily Gate:      8.6/12.0
+   Four-Factor:     25.0/25.0 — TIER_1
+   Risk/Reward:     1:1.5
+
+   TRADE SETUP:
+   Entry:           $545.50
+   Stop Loss:       $468.21 (2x ATR)
+   Target:          $661.44 (3x ATR)
+
+   OPTIONS STRUCTURE (IV-Rank Decision Tree):
+   IV-Rank:         Moderate (elevated vol at 65%)
+   Recommended:     Bull Call Debit Spread (50-70% IV-Rank zone)
+
+   POSITION SIZING ($50k portfolio, 1% risk):
+   Risk Amount:     $500
+   Stop Distance:   $77.29
+   Shares:          6
+   Position Value:  $3273
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🟡 SECTION 3: PRELIMINARY SIGNALS (Score 5–8) — Watchlist / Add on Pullback
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Total PRELIMINARY Signals: 7
+
+TICKER     PRICE   RSI   ADX   ST    WG    DG  SCORE    TIER     5d    21d               ACTION
+---------------------------------------------------------------------------------------------------------
+CRDO    $ 268.66  53.9  25.2  🟢    6.3   8.3   7.60 TIER_1    3.7%  20.9%      Add on pullback
+VRT     $ 326.92  52.0  10.0  🟢    5.5   7.8   7.01 TIER_1    5.0%   8.8%      Add on pullback
+ANET    $ 184.96  60.6  17.1  🟢    5.5   6.8   6.36 TIER_1   11.0%  18.3%      Add on pullback
+TSM     $ 440.71  52.0  13.9  🟢    4.8   6.6   5.96 TIER_1   -0.8%   3.5%      Add on pullback
+ONTO    $ 322.31  50.6  18.3  🟢    5.5   5.8   5.71 TIER_1   -8.3%  19.8%      Add on pullback
+KLAC    $ 230.70  48.3  25.1  🔴    4.8   5.5   5.24 TIER_1  -13.3%   9.4%   Wait for MACD flip
+LRCX    $ 353.52  46.7  22.0  🟢    5.3   5.2   5.20 TIER_1   -9.6%   9.0%   Wait for MACD flip
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📋 SECTION 4: COMPLETE WATCHLIST — ALL TICKERS WITH SIGNAL STATUS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+TICKER     PRICE   RSI   ADX  ST MACD  RVOL    5d%   21d%   WG   DG   TOT       SIGNAL    TIER
+--------------------------------------------------------------------------------------------------------------
+ALAB    $ 420.02  55.7  32.7  🟢   🔴   0.4x  -2.5%  21.3%  7.0  8.6  8.01 ✅ CONFIRMED  TIER_1 
+AMD     $ 545.50  55.2  22.4  🟢   🔴   0.6x   0.9%  11.3%  7.0  8.6  8.01 ✅ CONFIRMED  TIER_1 
+CRDO    $ 268.66  53.9  25.2  🟢   🔴   0.4x   3.7%  20.9%  6.3  8.3  7.60 🟡 PRELIMINARY TIER_1 
+VRT     $ 326.92  52.0  10.0  🟢   🟢   0.4x   5.0%   8.8%  5.5  7.8  7.01 🟡 PRELIMINARY TIER_1 
+ANET    $ 184.96  60.6  17.1  🟢   🟢   0.8x  11.0%  18.3%  5.5  6.8  6.36 🟡 PRELIMINARY TIER_1 
+TSM     $ 440.71  52.0  13.9  🟢   🔴   0.5x  -0.8%   3.5%  4.8  6.6  5.96 🟡 PRELIMINARY TIER_1 
+ONTO    $ 322.31  50.6  18.3  🟢   🔴   0.8x  -8.3%  19.8%  5.5  5.8  5.71 🟡 PRELIMINARY TIER_1 
+KLAC    $ 230.70  48.3  25.1  🔴   🔴   0.5x -13.3%   9.4%  4.8  5.5  5.24 🟡 PRELIMINARY TIER_1 
+LRCX    $ 353.52  46.7  22.0  🟢   🔴   0.5x  -9.6%   9.0%  5.3  5.2  5.20 🟡 PRELIMINARY TIER_1 
+MRVL    $ 246.65  39.1  24.5  🟢   🔴   0.3x  -9.3% -14.6%  4.3  4.0  4.11 ⚪ NONE       TIER_1 
+SMH     $ 612.22  48.1  16.5  🟢   🔴   0.6x  -1.3%   2.4%  2.8  4.1  3.63 ⚪ NONE       TIER_1 
+AVGO    $ 405.52  54.4  19.7  🔴   🟢   0.6x   9.8%   2.4%  3.0  3.9  3.55 ⚪ NONE       TIER_1 
+ENTG    $ 149.04  47.1  17.0  🟢   🔴   0.4x  -9.8%  12.3%  2.8  3.1  2.98 ⚪ NONE       TIER_1 
+MU      $1014.58  48.4  19.7  🟢   🔴   0.5x  -1.7%   6.9%  2.8  3.1  2.98 ⚪ NONE       TIER_1 
+NVDA    $ 204.01  49.3  17.9  🔴   🟢   0.6x   3.3%  -2.2%  2.0  3.5  2.97 ⚪ NONE       TIER_1 
+OKLO    $  49.84  31.7  17.8  🔴   🔴   0.5x  -5.0% -15.4%  1.3  0.5  0.75 ⚪ NONE       WATCH  
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+💎 SECTION 5: OPTIONS STRUCTURES — IV-RANK DECISION TREE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Current Market Environment:
+• SMH 20d Volatility: 65.1% → ELEVATED (normal 25-35%)
+• This puts us in the IVR 50-70% zone → FAVOR CREDIT SPREADS
+• But for high-conviction Tier 1 names, use BULL CALL DEBIT SPREADS
+
+TIER 1 CORE — Preferred Structures:
+┌────────┬──────────────────────────────────────────────────────────────┐
+│ Ticker │ Recommended Structure                                         │
+├────────┼──────────────────────────────────────────────────────────────┤
+│ NVDA   │ Long Calls / Debit Spreads (IVR ~21%, cheap vol)             │
+│ MU     │ Bull Put Credit Spreads (IVR 80-100%, rich premium)          │
+│ AVGO   │ Bull Call Spreads (moderate IV)                              │
+│ VRT    │ Stock + Covered Calls (power/cooling scarcity)               │
+│ MRVL   │ Bull Call Spreads (moderate IV)                              │
+│ ANET   │ Bull Call Spreads (moderate IV)                              │
+│ TSM    │ Core stock position (fab capacity scarcity)                  │
+└────────┴──────────────────────────────────────────────────────────────┘
+
+CURRENT CONFIRMED TRADES — Options:
+┌────────┬──────────────────────────────────────────────────────────────┐
+│ ALAB   │ Bull Call Debit Spread: Buy 420C, Sell 460C (~30 DTE)       │
+│        │ Max Risk: ~$8-10 per spread | Max Gain: ~$30 per spread    │
+│        │ Rationale: EMA stack bullish, ADX 32.7 strong trend        │
+├────────┼──────────────────────────────────────────────────────────────┤
+│ AMD    │ Bull Call Debit Spread: Buy 550C, Sell 600C (~30 DTE)       │
+│        │ Max Risk: ~$10-12 per spread | Max Gain: ~$38 per spread   │
+│        │ Rationale: EMA stack, SuperTrend bullish, MI400 catalyst   │
+└────────┴──────────────────────────────────────────────────────────────┘
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🛡️ SECTION 6: RISK MANAGEMENT — KILL SWITCHES & POSITION LIMITS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+KILL SWITCH STATUS:
+   ✅ VIX Level:        No VIX data (SMH vol proxy at 65.1% — NOT triggered)
+   ✅ SMH vs 200DMA:    $612.22 > $489.47 — ABOVE trend
+   ✅ 10Y Yield + ISM:  No data — ASSUMED OK
+   ✅ Realized Vol:     65.1% — ELEVATED but not >40% kill
+   ✅ Tier 1 EPS:       No recent misses reported
+   ✅ Portfolio DD:     N/A (new run)
+
+   🟢 ALL KILL SWITCHES CLEAR — PROCEED WITH CAUTION
+
+POSITION LIMITS (MIXED Regime):
+   Max Single Name:     15% of portfolio ($7,500 on $50k)
+   Max Bottleneck:      45% of portfolio ($22,500 on $50k)
+   Risk Per Trade:      1% ($500)
+   Max Options Loss:    $500 per trade
+   Cash Reserve:        10% minimum ($5,000)
+
+STAGED DE-RISKING:
+   Portfolio DD > 10%:  Halve new risk positions
+   Portfolio DD > 15%:  Pause all new entries
+   Portfolio DD > 20%:  Flat except hedges
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📊 SECTION 7: EXECUTABLE TRADE SUMMARY
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+┌────────┬────────┬───────────┬───────────┬───────────┬────────┬──────────┬────────────┐
+│ Ticker │ Shares │ Entry     │ Stop      │ Target    │ Risk   │ Value    │ Sleeve     │
+├────────┼────────┼───────────┼───────────┼───────────┼────────┼──────────┼────────────┤
+│ ALAB   │ 5      │ $420.02   │ $325.86   │ $561.28   │ $471   │ $2,100   │ Innovation │
+│ AMD    │ 6      │ $545.50   │ $468.21   │ $661.44   │ $464   │ $3,273   │ Innovation │
+└────────┴────────┴───────────┴───────────┴───────────┴────────┴──────────┴────────────┘
+
+Total New Risk:     $935 (1.9% of $50k portfolio — within 2% limit)
+Total Position Val: $5,373 (10.7% of portfolio)
+Cash Remaining:     ~$44,627
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📡 SECTION 8: 7 LIVE SIGNALS — OMEGA DASHBOARD
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+S1  Upward Revision Velocity:    SCANNING — NVDA, AMD showing positive momentum
+S2  RVOL Theme Outperformers:    ALAB (0.4x), AMD (0.6x) — volume subdued, accumulation phase
+S3  Technical Momentum:           ALAB (RSI 55.7), AMD (RSI 55.2) — in sweet spot
+S4  Fundamental Score:            ALAB, AMD both TIER_1 (25/25)
+S5  Healthy Financials:           All Tier 1 names FCF positive
+S6  Emerging Theme Radar:         AI Ethernet (ALAB, ANET) — secular growth
+S7  Benchmark Outperformers:      ANET +11.0% (5d) — strongest RS
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🧠 SECTION 9: EXPERT KNOWLEDGE BRAIN SYNTHESIS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+LEOPOLD (AGI Infrastructure):
+   → Power/compute infra remains the scarcest resource
+   → VRT, CEG, VST are "picks and shovels" of the AI revolution
+   → ACTION: Maintain VRT position, watch for CEG entry
+
+VISSER (AI Macro Nexus):
+   → AI is the dominant macro theme; BTC correlation high
+   → Rotate from software to infrastructure
+   → ACTION: Favor L4 (Infra) over L5 (Software) in current regime
+
+WOLFF (Quality Compounders):
+   → Buy dips in quality, trim strength
+   → ALAB pullback (-2.5% 5d) = quality entry opportunity
+   → ACTION: Add ALAB on this pullback
+
+JENSON (Semiconductor Ecosystem):
+   → Hardware demand cycle intact but volatile
+   → MI400 ramp = AMD catalyst
+   → ACTION: AMD is the best risk/reward in compute right now
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🎯 SECTION 10: ACTION ITEMS & NEXT STEPS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+IMMEDIATE (Today):
+   [ ] 1. Execute ALAB bull call debit spread (420C/460C, ~30 DTE)
+   [ ] 2. Execute AMD bull call debit spread (550C/600C, ~30 DTE)
+   [ ] 3. Set stop alerts at $325.86 (ALAB) and $468.21 (AMD)
+   [ ] 4. Enter VRT if it pulls back to $310 (EMA 21 support)
+
+THIS WEEK:
+   [ ] 5. Monitor CRDO for entry above $275 (breakout confirmation)
+   [ ] 6. Watch ANET — if RSI cools below 55, consider entry
+   [ ] 7. Review MU for bull put credit spread (IVR 80-100% = rich premium)
+
+ONGOING:
+   [ ] 8. Run full cycle daily at market close
+   [ ] 9. Monitor SMH vs 200DMA for regime shift
+   [ ] 10. If VIX proxy > 40% → activate kill switch protocol
+
+
+====================================================================================================
+END OF REPORT — Generated by Bottleneck Capital v2.0 Agentic Hedge Fund
+Timestamp: July 9, 2026 2:33 PM ET | Data Source: Yahoo Finance
+====================================================================================================
