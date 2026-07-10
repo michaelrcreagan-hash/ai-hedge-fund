@@ -1,0 +1,30 @@
+# AI Hedge Fund Configuration
+universe:
+  version: "2026.07"
+  total_stocks: 66
+  indices: [SPY, QQQ, SMH, ^VIX]
+  hedge_tickers: [TLT, GLD, IEF, SHY, GDXJ, PFF]
+sleeves:
+  risk_on:   {macro: 0.40, income: 0.15, innovation: 0.35, options: 0.10, cash: 0.00}
+  mixed:     {macro: 0.35, income: 0.30, innovation: 0.20, options: 0.10, cash: 0.05}
+  caution:   {macro: 0.20, income: 0.45, innovation: 0.10, options: 0.05, cash: 0.20}
+  risk_off:  {macro: 0.05, income: 0.50, innovation: 0.00, options: 0.00, cash: 0.45}
+optimization:
+  macro_trend_gate: false
+  income_variant: "both"
+  innovation_top_n: 4
+  momentum_window: 63
+  innovation_vol_target: 0.35
+regime:
+  vix_low: 17
+  vix_high: 25
+  breadth_bull: 60
+  breadth_bear: 40
+scoring:
+  weights:
+    hyperscaler_velocity: 0.20
+    earnings_velocity: 0.20
+    peer_valuation: 0.15
+    technical_roc: 0.15
+    atr_overextension: 0.10
+    analyst_revision: 0.20
