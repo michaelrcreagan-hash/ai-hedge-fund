@@ -1,0 +1,19 @@
+name: Market Data Poll
+
+on:
+  schedule:
+    - cron: '*/15 13-20 * * 1-5'
+    - cron: '30 13 * * 1-5'
+  workflow_dispatch:
+
+jobs:
+  poll:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Poll market data
+        run: |
+          curl -s "https://kesqaugbzcguoxdedtxt.supabase.co/functions/v1/market-data-poll" \
+            -H "Authorization: Bearer ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}" \
+            | jq .
+      - name: Log completion
+        run: echo "Market data poll completed at $(date -u +"%Y-%m-%dT%H:%M:%SZ")"
