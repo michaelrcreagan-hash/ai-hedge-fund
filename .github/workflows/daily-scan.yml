@@ -1,0 +1,33 @@
+name: Daily Market Scan
+
+# 4:30 PM ET, Mon-Fri. GitHub cron is UTC; 20:30 UTC ≈ 16:30 EDT (summer).
+# GitHub does NOT auto-adjust for DST — in winter (EST, UTC-5) shift to "30 21 * * 1-5".
+on:
+  schedule:
+    - cron: "30 20 * * 1-5"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install
+        run: |
+          python -m pip install --upgrade pip
+          pip install -e ".[dev]"
+      - name: Run scan
+        env:
+          TIPRANKS_API_KEY: ${{ secrets.TIPRANKS_API_KEY }}
+          LSEG_API_KEY: ${{ secrets.LSEG_API_KEY }}
+          FINNHUB_API_KEY: ${{ secrets.FINNHUB_API_KEY }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          POLYMARKET_API_KEY: ${{ secrets.POLYMARKET_API_KEY }}
+          FRED_API_KEY: ${{ secrets.FRED_API_KEY }}
+        run: python -m ai_hedge_fund scan
