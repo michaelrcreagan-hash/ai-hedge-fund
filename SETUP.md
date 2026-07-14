@@ -263,11 +263,10 @@ The system uses built-in caching to minimize API calls.
 |           |                     |                            |
 |           v                     v                            |
 |  +--------------------------------------------------+       |
-|  | Composite Action: setup-fund                       |       |
-|  | - Checkout code                                   |       |
-|  | - Setup Python 3.12                               |       |
+|  | Each workflow does its own:                        |       |
+|  | - Checkout code (actions/checkout@v4)             |       |
+|  | - Setup Python (actions/setup-python@v5)          |       |
 |  | - pip install -e ".[dev]"                         |       |
-|  | - Validate config                                 |       |
 |  +--------------------------------------------------+       |
 |           |                                                  |
 |           v                                                  |
