@@ -284,6 +284,7 @@ if barstate.islast
 // =============================================================================
 // ALERTS
 // =============================================================================
+// --- Human-readable alertconditions (use with TradingView's built-in UI alerts) ---
 alertcondition(early_entry, title="Early Entry Signal", 
      message="OFC v6: Early Entry detected on {{ticker}} - VCP forming, potential breakout imminent")
 alertcondition(early_exit, title="Early Exit Signal", 
@@ -292,6 +293,43 @@ alertcondition(bull_signal and not bull_signal[1], title="Bullish Composite",
      message="OFC v6: Bullish composite signal on {{ticker}} - Score: {{plot_0}}")
 alertcondition(bear_signal and not bear_signal[1], title="Bearish Composite", 
      message="OFC v6: Bearish composite signal on {{ticker}} - Score: {{plot_0}}")
+
+// --- Webhook JSON alerts (use "Add Alert" -> "Webhook URL" -> paste receiver URL) ---
+// These emit a structured JSON body so an external receiver (GitHub webhook ingest)
+// can parse the signal deterministically. map.new() + json.stringify() supported in v6.
+tv_alert_json(action) =>
+    string(json.stringify(
+         map.new()
+             .put("indicator", "OFC_v6")
+             .put("symbol", syminfo.ticker)
+             .put("action", action)
+             .put("composite", str.tostring(composite_smooth, "#.##"))
+             .put("vol_score", str.tostring(vol_score, "#.#"))
+             .put("vcp_score", str.tostring(squeeze_score, "#.#"))
+             .put("momentum_score", str.tostring(momentum_score, "#.#"))
+             .put("trend_score", str.tostring(trend_score, "#.#"))
+             .put("meanrev_score", str.tostring(mean_rev_score, "#.#"))
+             .put("rsi", str.tostring(rsi_val, "#.#"))
+             .put("atr_pct", str.tostring(atr_pct, "#.##"))
+             .put("close", str.tostring(close_price, "#.##"))
+             .put("long_stop", str.tostring(long_stop, "#.##"))
+             .put("long_tp", str.tostring(long_tp, "#.##"))
+             .put("short_stop", str.tostring(short_stop, "#.##"))
+             .put("short_tp", str.tostring(short_tp, "#.##"))
+             .put("interval", timeframe.period)
+         ))
+
+// Fire a `alert()` (not alertcondition) so TradingView POSTs the JSON to your webhook URL.
+// In TradingView: Add Alert -> Conditions = "OFC v6" -> in the alert dialog pick the
+// "Webhook URL" toggle and paste your receiver endpoint, then this fires the JSON body.
+if early_entry
+    alert(tv_alert_json("EARLY_ENTRY"), alert.freq_once_per_bar)
+if early_exit
+    alert(tv_alert_json("EARLY_EXIT"), alert.freq_once_per_bar)
+if bull_signal and not bull_signal[1]
+    alert(tv_alert_json("BULLISH"), alert.freq_once_per_bar)
+if bear_signal and not bear_signal[1]
+    alert(tv_alert_json("BEARISH"), alert.freq_once_per_bar)
 
 // =============================================================================
 // INFORMATION PANEL

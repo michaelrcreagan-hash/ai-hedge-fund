@@ -1,0 +1,3 @@
+# TradingView OFC v6 signal ledger lives here, one JSON file per alert.
+# This branch is written by the webhook receiver (webhook_receiver/app.py)
+# and is kept separate from `main` so the main branch stays clean.
